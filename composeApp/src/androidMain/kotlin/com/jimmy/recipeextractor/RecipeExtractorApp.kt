@@ -1,7 +1,6 @@
 package com.jimmy.recipeextractor
 
 import android.app.Application
-import com.jimmy.recipeextractor.domain.di.androidModule
 import com.jimmy.recipeextractor.domain.di.commonModule
 import org.koin.android.ext.koin.androidContext
 import org.koin.core.context.startKoin

@@ -26,12 +26,6 @@ kotlin {
     }
     
     sourceSets {
-        androidMain.dependencies {
-            implementation(libs.compose.uiToolingPreview)
-            implementation(libs.androidx.activity.compose)
-
-            implementation(libs.koin.android)
-        }
         commonMain.dependencies {
             implementation(libs.compose.runtime)
             implementation(libs.compose.foundation)
@@ -48,6 +42,13 @@ kotlin {
         commonTest.dependencies {
             implementation(libs.kotlin.test)
         }
+        androidMain.dependencies {
+            implementation(libs.compose.uiToolingPreview)
+            implementation(libs.androidx.activity.compose)
+
+            implementation(libs.koin.android)
+        }
+        iosMain.dependencies {}
     }
 }
 
